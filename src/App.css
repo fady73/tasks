@@ -1,0 +1,71 @@
+@import "~antd/dist/antd.css";
+@import "~react-toastify/dist/ReactToastify.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+.app,
+#root {
+  height: auto;
+}
+
+body,
+.app,
+h4,
+h3,
+h2,
+.ant-table-tbody,
+.ant-table-column-title,
+.ant-table-cell.ant-table-column-has-sorters,
+.br-header {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.form-control::placeholder,
+.form-control::-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cdcdcd;
+}
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  transition: all 0.5s;
+}
